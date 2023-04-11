@@ -3,6 +3,7 @@ import "../style.css";
 import { Button, theme } from "antd";
 // import { useNavigate } from "react-router-dom";
 import Landing from "./sections/landing";
+import AboutMe from "./sections/aboutMe";
 
 const { useToken } = theme;
 
@@ -12,6 +13,7 @@ export default function Home() {
     // <div className="centerComp">
     <div>
       <Landing />
+      <AboutMe />
     </div>
   );
 }

@@ -18,7 +18,7 @@ export default function Landing() {
         </h1>
         <h2
           style={{
-            color: token.colorPrimaryLight,
+            color: token.primaryLight,
             margin: "0px",
             textAlign: "left",
           }}

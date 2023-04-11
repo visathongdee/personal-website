@@ -20,7 +20,7 @@ function App() {
             primary: "#343B58",
             primaryDark: "#24283B",
             primaryLight: "#8589A7",
-            lightPink: "#FAADBB",
+            lightPink: "#FAA9BB",
             darkPink: "#F7768E",
           },
         }}
