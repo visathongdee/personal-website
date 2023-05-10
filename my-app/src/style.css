@@ -92,13 +92,11 @@ p {
     color: #8589A7;
   }
 
-/* svg {
-    fill: #F7768E;
-} */
-
 .bullet {
     width: 15px;
-    color: #F7768E;
+    stroke: #F7768E;
+    stroke-width: 1; 
+    margin-right: 10px;
 }
 
 .circleIcon {

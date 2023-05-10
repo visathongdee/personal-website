@@ -2,7 +2,7 @@ import React from "react";
 import "../../style.css";
 import { theme, Card } from "antd";
 import { RightOutlined, StarTwoTone } from "@ant-design/icons";
-import { BsFillCircleFill } from "react-icons/bs";
+import { BsFillCircleFill, BsChevronRight } from "react-icons/bs";
 // import { RightOutlined, MessageOutlined } from "@ant-design/icons";
 // import { useNavigate } from "react-router-dom";
 
@@ -33,6 +33,18 @@ export default function AboutMe() {
       </div>
     </div>
   );
+
+  const techs = ["JavaScript", "Firebase", "Java", "ReactJS", "SQL", "C/C++"];
+  const techDiv = [];
+  for (let tech of techs) {
+    techDiv.push(
+      <div className="gridItem">
+        <BsChevronRight className="bullet" />
+        {tech}
+      </div>
+    );
+  }
+
   return (
     <div className="parent">
       <div className="container">
@@ -46,32 +58,13 @@ export default function AboutMe() {
           </p>
           <p>A few technologies I’ve been working with recently:</p>
           <div className="skillsGrid">
-            {/* <div className="gridItem">
-              <RightOutlined style={{ width: "12px", color: "#FAA9BB" }} />
-            </div> */}
-            <div className="gridItem">
-              <RightOutlined className="bullet" /> Javascript
-            </div>
-            <div className="gridItem">
-              <RightOutlined className="bullet" />
-              Firebase
-            </div>
-            <div className="gridItem">
-              <RightOutlined className="bullet" />
-              Java
-            </div>
-            <div className="gridItem">
-              <RightOutlined className="bullet" />
-              ReactJS
-            </div>
-            <div className="gridItem">
-              <RightOutlined className="bullet" />
-              SQL
-            </div>
-            <div className="gridItem">
-              <RightOutlined style={{ width: "15px", color: token.darkPink }} />
-              C/C++
-            </div>
+            {/* {techDiv} */}
+            {techs.map((tech, index) => (
+              <div className="gridItem">
+                <BsChevronRight className="bullet" />
+                {tech}
+              </div>
+            ))}
           </div>
         </Card>
       </div>
