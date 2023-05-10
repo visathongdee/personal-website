@@ -2,11 +2,12 @@ import React from "react";
 import "../../style.css";
 import { theme, Card } from "antd";
 import { BsFillCircleFill, BsChevronRight } from "react-icons/bs";
+import { Radio, Tabs } from "antd";
 // import { useNavigate } from "react-router-dom";
 
 const { useToken } = theme;
 
-export default function AboutMe() {
+export default function Experience() {
   const { token } = useToken();
   const aboutMeTitle = (
     <div style={{ display: "flex", marginTop: "5px", marginBottom: "5px" }}>
@@ -27,7 +28,7 @@ export default function AboutMe() {
           alignContent: "center",
         }}
       >
-        About Me
+        Experience
       </div>
     </div>
   );
@@ -43,27 +44,42 @@ export default function AboutMe() {
     );
   }
 
+  const onChange = (key) => {
+    console.log(key);
+  };
+  const items = [
+    {
+      key: "1",
+      label: "Genesys",
+      children: `Content of Tab Pane 1`,
+    },
+    {
+      key: "2",
+      label: "The Data Mine Purdue",
+      children: `Content of Tab Pane 2`,
+    },
+    {
+      key: "3",
+      label: "Purdue IT",
+      children: `Content of Tab Pane 3`,
+    },
+    {
+      key: "4",
+      label: "The Data Mine: Corporate Partners",
+      children: `Content of Tab Pane 3`,
+    },
+  ];
+
   return (
     <div className="parent">
       <div className="container">
         <Card title={aboutMeTitle} style={{ textAlign: "left" }}>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-            vestibulum, lectus in tincidunt consequat, tortor dolor faucibus
-            urna, at posuere odio lorem at justo. Quisque elementum ex at odio
-            rutrum, et euismod lorem ornare. Ut suscipit lectus quis orci
-            volutpat ornare. Nunc augue dui, cursus nec iaculis ut, commodo sed.
-          </p>
-          <p>A few technologies I’ve been working with recently:</p>
-          <div className="skillsGrid">
-            {/* {techDiv} */}
-            {techs.map((tech) => (
-              <div className="gridItem">
-                <BsChevronRight className="bullet" />
-                {tech}
-              </div>
-            ))}
-          </div>
+          <Tabs
+            defaultActiveKey="1"
+            tabPosition="left"
+            items={items}
+            onChange={onChange}
+          />
         </Card>
       </div>
     </div>
