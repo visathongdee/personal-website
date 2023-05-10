@@ -11,10 +11,26 @@ const { useToken } = theme;
 export default function AboutMe() {
   const { token } = useToken();
   const aboutMeTitle = (
-    <div style={{ justifyContent: "center", alignContent: "center" }}>
-      <BsFillCircleFill className="circleIcon" />
-      <BsFillCircleFill className="circleIcon" />
-      <BsFillCircleFill className="circleIcon" /> About Me
+    <div style={{ display: "flex", marginTop: "5px", marginBottom: "5px" }}>
+      <div
+        style={{
+          justifyContent: "center",
+          alignContent: "center",
+          marginRight: "35px",
+        }}
+      >
+        <BsFillCircleFill className="circleIcon" viewBox="-2 -5 20 20" />
+        <BsFillCircleFill className="circleIcon" viewBox="-2 -5 20 20" />
+        <BsFillCircleFill className="circleIcon" viewBox="-2 -5 20 20" />
+      </div>
+      <div
+        style={{
+          justifyContent: "center",
+          alignContent: "center",
+        }}
+      >
+        About Me
+      </div>
     </div>
   );
   return (
