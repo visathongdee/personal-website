@@ -1,7 +1,11 @@
 import React from "react";
 import "../../style.css";
 import { theme, Card } from "antd";
-import { BsFillCircleFill, BsChevronRight } from "react-icons/bs";
+import {
+  BsFillCircleFill,
+  BsChevronRight,
+  BsFillFolderFill,
+} from "react-icons/bs";
 import { Radio, Tabs } from "antd";
 // import { useNavigate } from "react-router-dom";
 
@@ -47,15 +51,25 @@ export default function Experience() {
   const onChange = (key) => {
     console.log(key);
   };
+
+  // const children = [child];
+  const child = (
+    <div>
+      <h1>The Data Mine: Corporate Partners - Merck</h1>
+    </div>
+  );
+
+  const { TabPane } = Tabs;
+
   const items = [
     {
       key: "1",
       label: "Genesys",
-      children: `Content of Tab Pane 1`,
+      children: child,
     },
     {
       key: "2",
-      label: "The Data Mine Purdue",
+      label: "The Data Mine",
       children: `Content of Tab Pane 2`,
     },
     {
@@ -65,21 +79,51 @@ export default function Experience() {
     },
     {
       key: "4",
-      label: "The Data Mine: Corporate Partners",
+      label: "Corporate Partners - Merck",
       children: `Content of Tab Pane 3`,
+      className: "last-tab",
     },
   ];
+
+  const CustomTab = ({ label }) => (
+    <span className="tab-label">
+      <BsFillFolderFill className="folderIcon" />{" "}
+      <div style={{ color: "white" }}>{label}</div>
+    </span>
+  );
+
+  const MyTabs = () => {
+    return (
+      <Tabs defaultActiveKey="1" tabPosition="left">
+        {items.map((item) => (
+          <TabPane
+            key={item.key}
+            tab={<CustomTab label={item.label} />}
+            className={item.className}
+          >
+            {item.children}
+          </TabPane>
+        ))}
+      </Tabs>
+    );
+  };
 
   return (
     <div className="parent">
       <div className="container">
-        <Card title={aboutMeTitle} style={{ textAlign: "left" }}>
-          <Tabs
+        <Card
+          title={aboutMeTitle}
+          style={{ textAlign: "left" }}
+          bodyStyle={{ padding: "0", margin: "0" }}
+        >
+          {/* <Tabs
+            className="tabs-titles"
             defaultActiveKey="1"
             tabPosition="left"
             items={items}
             onChange={onChange}
-          />
+          /> */}
+          <MyTabs />
         </Card>
       </div>
     </div>
