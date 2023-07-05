@@ -56,13 +56,13 @@ export default function AboutMe() {
           </p>
           <p>A few technologies I’ve been working with recently:</p>
           <div className="skillsGrid">
-            {/* {techDiv} */}
-            {techs.map((tech) => (
+            {techDiv}
+            {/* {techs.map((tech) => (
               <div className="gridItem">
                 <BsChevronRight className="bullet" />
                 {tech}
               </div>
-            ))}
+            ))} */}
           </div>
         </Card>
       </div>

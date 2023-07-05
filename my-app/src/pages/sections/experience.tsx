@@ -7,9 +7,15 @@ import {
   BsFillFolderFill,
 } from "react-icons/bs";
 import { Radio, Tabs } from "antd";
-// import { useNavigate } from "react-router-dom";
 
 const { useToken } = theme;
+
+interface ExperienceEntry {
+  title: string
+  place: string
+  date: string
+  bullets: string[] 
+}
 
 export default function Experience() {
   const { token } = useToken();
@@ -37,25 +43,39 @@ export default function Experience() {
     </div>
   );
 
-  const techs = ["JavaScript", "Firebase", "Java", "ReactJS", "SQL", "C/C++"];
-  const techDiv = [];
-  for (let tech of techs) {
-    techDiv.push(
-      <div className="gridItem">
-        <BsChevronRight className="bullet" />
-        {tech}
-      </div>
-    );
-  }
+  // const genesysEntry: ExperienceEntry {
+  //   title: 
+  // }
 
-  const onChange = (key) => {
-    console.log(key);
-  };
+  const genesysBullets = [
+    "Establish grading guidelines and grade projects of over 800 students of the STAT 19000 course.",
+    "Aid students with questions and issues regarding weekly projects involving Python and R done on Jupyter Notebook.",
+  ];
 
   // const children = [child];
   const child = (
-    <div>
-      <h1>The Data Mine: Corporate Partners - Merck</h1>
+    <div
+      style={{
+        margin: "20px",
+        display: "flex",
+        flexDirection: "column",
+        gap: "12px",
+      }}
+    >
+      <div>
+        <div style={{ display: "flex", gap: "12px", margin: "0px" }}>
+          <h2 className="exp-title">Software Engineering Intern</h2>
+          <h2 className="exp-title-pink">@ Genesys</h2>
+        </div>
+        <p className="exp-title-secondary">May - Aug 2023</p>
+      </div>
+
+      {genesysBullets.map((bullet) => (
+        <div style={{ display: "flex", flexDirection: "row" }}>
+          <BsChevronRight className="exp-bullet" />
+          <div className="exp-bullet-text">{bullet}</div>
+        </div>
+      ))}
     </div>
   );
 
@@ -94,7 +114,14 @@ export default function Experience() {
 
   const MyTabs = () => {
     return (
-      <Tabs defaultActiveKey="1" tabPosition="left">
+      <Tabs
+        defaultActiveKey="1"
+        tabPosition="left"
+        tabBarStyle={{
+          minHeight: "400px",
+          height: "auto",
+        }}
+      >
         {items.map((item) => (
           <TabPane
             key={item.key}

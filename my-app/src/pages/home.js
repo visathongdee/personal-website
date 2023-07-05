@@ -4,7 +4,7 @@ import { Button, theme } from "antd";
 // import { useNavigate } from "react-router-dom";
 import Landing from "./sections/landing";
 import AboutMe from "./sections/aboutMe";
-import Experience from "./sections/experience";
+import Experience from "./sections/experience.tsx";
 
 const { useToken } = theme;
 

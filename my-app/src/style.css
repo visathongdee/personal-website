@@ -108,7 +108,7 @@ p {
     margin: 0;
   }
 
-/* Experience */
+/* ================EXPERIENCE PAGE==================================== */
 .ant-tabs-nav-list {
     background-color: #8589A7;
     border-radius: 0px 0px 0px 43px;
@@ -120,16 +120,15 @@ p {
     text-overflow: ellipsis; */
 }
 
-/* .ant-tabs-tab.ant-tabs-tab-active .last-tab {
-    background-color: red;
-    /* padding: 50px; */
-/* } */
-
-
 /* background color of active tabs */
 .ant-tabs-tab.ant-tabs-tab-active {
     background-color: #636681;
     color: white;
+}
+
+ /* "Remove" colored ink bar on the side for active tabs */
+.ant-tabs-ink-bar {
+    background: transparent !important;
 }
 
 /* text color of active tabs */
@@ -176,5 +175,46 @@ p {
 .ant-tabs-nav .ant-tabs-tab-active {
     /* Custom border color for active tab */
     border-color: #636681;
-    
-  }
+}
+
+.exp-title {
+    color: #343B58;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0px;
+}
+
+.exp-title-pink {
+    color: hsl(349, 100%, 74%);
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0px;
+}
+
+.exp-title-secondary {
+    color: #8589A7;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0px;
+}
+
+.ant-tabs-tab {
+    margin: 0px !important;
+    padding: 10px 24px !important;
+}
+
+.exp-bullet-text {
+    padding: 6px;
+    text-align: left;
+    font-size: 17px;
+    color: #8589A7;
+    display: flex;
+}
+
+.exp-bullet {
+    width: 25px;
+    stroke: #F7768E;
+    stroke-width: 1; 
+    /* margin-right: 10px;  */
+    padding: 10px;
+}
