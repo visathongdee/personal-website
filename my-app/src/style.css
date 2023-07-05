@@ -40,6 +40,15 @@ p {
     margin-bottom: 10px;
 }
 
+.landing-parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid #2d2d2d; */
+    height: 70vh;
+}
+
 .parent {
     display: flex;
     flex-direction: column;
@@ -107,6 +116,38 @@ p {
     fill: #F6F6F6;
     margin: 0;
   }
+
+
+/* ===================== ANCHOR ===================== */
+
+.anchor {
+    /* background-color: rgb(246, 246, 246, 0.5); */
+    /* height: 50px; */
+}
+
+.ant-anchor-link-title {
+    font-size: 16px;
+    color: #343B58 !important;
+    padding-inline: 30px;
+}
+
+.ant-anchor-link-title.ant-anchor-link-title-active {
+    font-size: 16px;
+    color: #F7768E !important;
+    padding-inline: 30px;
+}
+
+.ant-anchor {
+    padding: 15px !important;
+    padding-top: 60px !important;
+    background-color: rgb(255, 255, 255, 0.75);
+    justify-content: flex-end;
+}
+
+.ant-anchor-ink-bar {
+    color: transparent !important;
+}
+
 
 /* ================EXPERIENCE PAGE==================================== */
 .ant-tabs-nav-list {

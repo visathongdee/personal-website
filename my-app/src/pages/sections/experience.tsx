@@ -11,10 +11,10 @@ import { Radio, Tabs } from "antd";
 const { useToken } = theme;
 
 interface ExperienceEntry {
-  title: string
-  place: string
-  date: string
-  bullets: string[] 
+  title: string;
+  place: string;
+  date: string;
+  bullets: string[];
 }
 
 export default function Experience() {
@@ -51,7 +51,7 @@ export default function Experience() {
       "Establish grading guidelines and grade projects of over 800 students of the STAT 19000 course.",
       "Aid students with questions and issues regarding weekly projects involving Python and R done on Jupyter Notebook.",
     ],
-  }
+  };
 
   const dataMineEntry: ExperienceEntry = {
     title: "Undergraduate Teaching Assistant",
@@ -61,7 +61,7 @@ export default function Experience() {
       "Establish grading guidelines and grade projects of over 800 students of the STAT 19000 course.",
       "Aid students with questions and issues regarding weekly projects involving Python and R done on Jupyter Notebook.",
     ],
-  }
+  };
 
   const itapEntry: ExperienceEntry = {
     title: "Technology Coordinator",
@@ -73,7 +73,7 @@ export default function Experience() {
       "Maintain constant communication with head office and coworkers through Microsoft Teams.",
       "Advised students and professors with issues regarding technological issues, printing, Purdue's authentication system, student software, etc.",
     ],
-  }
+  };
 
   const merckEntry: ExperienceEntry = {
     title: "Undergraduate Data Science Researcher",
@@ -84,7 +84,7 @@ export default function Experience() {
       "Engaged with a team of students with varying skills which promoted communication and learning.",
       "Managed content on the team's website and social medias with the current progress of projects.",
     ],
-  }
+  };
 
   const getExperienceEntry = (entry: ExperienceEntry) => {
     return (
@@ -111,8 +111,8 @@ export default function Experience() {
           </div>
         ))}
       </div>
-    )
-  }
+    );
+  };
 
   const { TabPane } = Tabs;
 
@@ -153,7 +153,7 @@ export default function Experience() {
         defaultActiveKey="1"
         tabPosition="left"
         tabBarStyle={{
-          minHeight: "400px",
+          minHeight: "500px",
           height: "auto",
         }}
       >

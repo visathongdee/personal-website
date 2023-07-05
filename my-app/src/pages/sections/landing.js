@@ -8,7 +8,7 @@ const { useToken } = theme;
 export default function Landing() {
   const { token } = useToken();
   return (
-    <div className="parent">
+    <div className="landing-parent">
       <div className="container">
         <h2 style={{ color: token.darkPink, margin: "0px", textAlign: "left" }}>
           Hello, my name is
