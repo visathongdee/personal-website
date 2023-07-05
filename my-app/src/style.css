@@ -265,3 +265,19 @@ p {
     border-radius: 2px;
     margin-block: 50px;
 }
+
+/* ===================== Contact Page ===================== */
+.contact-bold {
+    color: #343B58;
+    font-size: 18px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 5px;
+}
+
+.contact-icon {
+    stroke: #8589A7;
+    width: 20px;
+}

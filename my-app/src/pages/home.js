@@ -6,6 +6,7 @@ import Landing from "./sections/landing";
 import AboutMe from "./sections/aboutMe";
 import Experience from "./sections/experience.tsx";
 import Projects from "./sections/projects.tsx";
+import Contact from "./sections/contact.tsx";
 
 const { useToken } = theme;
 
@@ -18,6 +19,7 @@ export default function Home() {
       <AboutMe />
       <Experience />
       <Projects />
+      <Contact />
     </div>
   );
 }
