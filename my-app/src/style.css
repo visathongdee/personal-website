@@ -148,13 +148,12 @@ p {
     padding: 10px;
     font-weight: 500;
     font-size: large;
-    /* margin-bottom: 10px; */
 }
 
 /* Border clipping for the last tab */
-.ant-tabs-tab:nth-child(4).ant-tabs-tab-active {
+/* .ant-tabs-tab:nth-child(4).ant-tabs-tab-active {
     border-radius: 0px 0px 0px 43px;
-}
+} */
 
 
 /* aligning and coloring folder icons*/
@@ -182,6 +181,7 @@ p {
     font-size: 20px;
     font-weight: 500;
     margin: 0px;
+    width: fit-content;
 }
 
 .exp-title-pink {
@@ -189,6 +189,7 @@ p {
     font-size: 20px;
     font-weight: 500;
     margin: 0px;
+    width: fit-content;
 }
 
 .exp-title-secondary {
@@ -215,6 +216,16 @@ p {
     width: 25px;
     stroke: #F7768E;
     stroke-width: 1; 
-    /* margin-right: 10px;  */
     padding: 10px;
+}
+
+
+/* ===================== Projects Page ===================== */
+.proj-title {
+    color: #343B58;
+    font-size: 36px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }

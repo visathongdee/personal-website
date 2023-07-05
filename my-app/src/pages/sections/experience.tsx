@@ -43,41 +43,76 @@ export default function Experience() {
     </div>
   );
 
-  // const genesysEntry: ExperienceEntry {
-  //   title: 
-  // }
+  const genesysEntry: ExperienceEntry = {
+    title: "Software Engineering Intern",
+    place: "@ Genesys",
+    date: "May 2023 - Aug 2023",
+    bullets: [
+      "Establish grading guidelines and grade projects of over 800 students of the STAT 19000 course.",
+      "Aid students with questions and issues regarding weekly projects involving Python and R done on Jupyter Notebook.",
+    ],
+  }
 
-  const genesysBullets = [
-    "Establish grading guidelines and grade projects of over 800 students of the STAT 19000 course.",
-    "Aid students with questions and issues regarding weekly projects involving Python and R done on Jupyter Notebook.",
-  ];
+  const dataMineEntry: ExperienceEntry = {
+    title: "Undergraduate Teaching Assistant",
+    place: "@ The Data Mine",
+    date: "Aug 2022 - May 2023",
+    bullets: [
+      "Establish grading guidelines and grade projects of over 800 students of the STAT 19000 course.",
+      "Aid students with questions and issues regarding weekly projects involving Python and R done on Jupyter Notebook.",
+    ],
+  }
 
-  // const children = [child];
-  const child = (
-    <div
-      style={{
-        margin: "20px",
-        display: "flex",
-        flexDirection: "column",
-        gap: "12px",
-      }}
-    >
-      <div>
-        <div style={{ display: "flex", gap: "12px", margin: "0px" }}>
-          <h2 className="exp-title">Software Engineering Intern</h2>
-          <h2 className="exp-title-pink">@ Genesys</h2>
+  const itapEntry: ExperienceEntry = {
+    title: "Technology Coordinator",
+    place: "@ Purdue IT",
+    date: "Aug 2021 - May 2023",
+    bullets: [
+      "Ensure technological devices in classrooms around campus are working and in good condition for class use.",
+      "Supervise multiple ITaP computer labs including the opening and closings of the labs.",
+      "Maintain constant communication with head office and coworkers through Microsoft Teams.",
+      "Advised students and professors with issues regarding technological issues, printing, Purdue's authentication system, student software, etc.",
+    ],
+  }
+
+  const merckEntry: ExperienceEntry = {
+    title: "Undergraduate Data Science Researcher",
+    place: "@ The Data Mine: Corporate Partners - Merck",
+    date: "Aug 2021 - May 2022",
+    bullets: [
+      "Updated various aspect of the user interface of the SCANIN website using HTML/CSS and Git.",
+      "Engaged with a team of students with varying skills which promoted communication and learning.",
+      "Managed content on the team's website and social medias with the current progress of projects.",
+    ],
+  }
+
+  const getExperienceEntry = (entry: ExperienceEntry) => {
+    return (
+      <div
+        style={{
+          margin: "20px",
+          display: "flex",
+          flexDirection: "column",
+          gap: "12px",
+        }}
+      >
+        <div>
+          <div style={{ display: "flex", gap: "12px", margin: "0px" }}>
+            <h2 className="exp-title">{entry.title}</h2>
+            <h2 className="exp-title-pink">{entry.place}</h2>
+          </div>
+          <p className="exp-title-secondary">{entry.date}</p>
         </div>
-        <p className="exp-title-secondary">May - Aug 2023</p>
+
+        {entry.bullets.map((bullet) => (
+          <div style={{ display: "flex", flexDirection: "row" }}>
+            <BsChevronRight className="exp-bullet" />
+            <div className="exp-bullet-text">{bullet}</div>
+          </div>
+        ))}
       </div>
-
-      {genesysBullets.map((bullet) => (
-        <div style={{ display: "flex", flexDirection: "row" }}>
-          <BsChevronRight className="exp-bullet" />
-          <div className="exp-bullet-text">{bullet}</div>
-        </div>
-      ))}
-    </div>
-  );
+    )
+  }
 
   const { TabPane } = Tabs;
 
@@ -85,22 +120,22 @@ export default function Experience() {
     {
       key: "1",
       label: "Genesys",
-      children: child,
+      children: getExperienceEntry(genesysEntry),
     },
     {
       key: "2",
       label: "The Data Mine",
-      children: `Content of Tab Pane 2`,
+      children: getExperienceEntry(dataMineEntry),
     },
     {
       key: "3",
       label: "Purdue IT",
-      children: `Content of Tab Pane 3`,
+      children: getExperienceEntry(itapEntry),
     },
     {
       key: "4",
-      label: "Corporate Partners - Merck",
-      children: `Content of Tab Pane 3`,
+      label: "Merck",
+      children: getExperienceEntry(merckEntry),
       className: "last-tab",
     },
   ];

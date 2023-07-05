@@ -8,7 +8,7 @@ const { useToken } = theme;
 
 export default function AboutMe() {
   const { token } = useToken();
-  const aboutMeTitle = (
+  const title = (
     <div style={{ display: "flex", marginTop: "5px", marginBottom: "5px" }}>
       <div
         style={{
@@ -46,7 +46,7 @@ export default function AboutMe() {
   return (
     <div className="parent">
       <div className="container">
-        <Card title={aboutMeTitle} style={{ textAlign: "left" }}>
+        <Card title={title} style={{ textAlign: "left" }}>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
             vestibulum, lectus in tincidunt consequat, tortor dolor faucibus
@@ -54,7 +54,7 @@ export default function AboutMe() {
             rutrum, et euismod lorem ornare. Ut suscipit lectus quis orci
             volutpat ornare. Nunc augue dui, cursus nec iaculis ut, commodo sed.
           </p>
-          <p>A few technologies I’ve been working with recently:</p>
+          <p>A few technologies I've been working with recently:</p>
           <div className="skillsGrid">
             {techDiv}
             {/* {techs.map((tech) => (
