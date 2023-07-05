@@ -223,9 +223,45 @@ p {
 /* ===================== Projects Page ===================== */
 .proj-title {
     color: #343B58;
-    font-size: 36px;
+    font-size: 24px;
     font-family: Poppins;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+}
+
+.proj-photo {
+    width: 400px;
+    border-radius: 10px;
+    border: 2px solid #343B58;
+    background: lightgray 50% / cover no-repeat;
+    box-shadow: 4px 4px 0px 0px #343B58;
+}
+
+.proj-content {
+    color: #8589A7;
+    font-size: 18px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+}
+
+.proj-tech-list {
+    color: #F7768E;
+    font-size: 16px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px;
+}
+
+.line {
+    background-color: #343B58;
+    color: #343B58;
+    border-color: #343B58;
+    height: 1px;
+    border-radius: 2px;
+    margin-block: 50px;
 }
