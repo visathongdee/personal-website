@@ -14,7 +14,7 @@ export default function Landing() {
           Hello, my name is
         </h2>
         <h1 style={{ fontSize: "60px", margin: "0px", textAlign: "left" }}>
-          test check alsdjaklasjdflkjsadf
+          test check alsdjaklasjdflkjsadflsjkdflkajsdf
         </h1>
         <h1 style={{ fontSize: "60px", margin: "0px", textAlign: "left" }}>
           Visa Theerapatra Thongdee
