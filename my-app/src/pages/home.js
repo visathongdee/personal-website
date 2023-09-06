@@ -1,17 +1,13 @@
 import React from "react";
 import "../style.css";
-import { FloatButton, theme, Anchor } from "antd";
-// import { useNavigate } from "react-router-dom";
+import { FloatButton, Anchor } from "antd";
 import Landing from "./sections/landing";
 import AboutMe from "./sections/aboutMe";
 import Experience from "./sections/experience.tsx";
 import Projects from "./sections/projects.tsx";
 import Contact from "./sections/contact.tsx";
 
-const { useToken } = theme;
-
 export default function Home() {
-  const { token } = useToken();
 
   const items = [
     {

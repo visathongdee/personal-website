@@ -1,13 +1,10 @@
 import React from "react";
 import "../../style.css";
-import { theme, Card } from "antd";
-import { BsFillCircleFill, BsGithub, BsLink, BsLinkedin } from "react-icons/bs";
+import { Card } from "antd";
+import { BsFillCircleFill } from "react-icons/bs";
 import { Github, Linkedin, Mail } from "lucide-react";
 
-const { useToken } = theme;
-
 export default function Contact() {
-  const { token } = useToken();
   const title = (
     <div style={{ display: "flex", marginTop: "5px", marginBottom: "5px" }}>
       <div

@@ -2,13 +2,8 @@ import React from "react";
 import "../../style.css";
 import { Card } from "antd";
 import { BsFillCircleFill, BsChevronRight } from "react-icons/bs";
-// import { theme } from "antd";
-// import { useNavigate } from "react-router-dom";
-
-// const { useToken } = theme;
 
 export default function AboutMe() {
-  // const { token } = useToken();
   const title = (
     <div style={{ display: "flex", marginTop: "5px", marginBottom: "5px" }}>
       <div
@@ -57,12 +52,6 @@ export default function AboutMe() {
           <p>A few technologies I've been working with recently:</p>
           <div className="skillsGrid">
             {techDiv}
-            {/* {techs.map((tech) => (
-              <div className="gridItem">
-                <BsChevronRight className="bullet" />
-                {tech}
-              </div>
-            ))} */}
           </div>
         </Card>
       </div>

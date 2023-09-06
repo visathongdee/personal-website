@@ -81,9 +81,8 @@ export default function Experience() {
     place: "@ The Data Mine: Corporate Partners - Merck",
     date: "Aug 2021 - May 2022",
     bullets: [
-      "Updated various aspect of the user interface of the SCANIN website using HTML/CSS and Git.",
-      "Engaged with a team of students with varying skills which promoted communication and learning.",
-      "Managed content on the team's website and social medias with the current progress of projects.",
+      "Developed a user-friendly website using React and the MERN stack, enabling scientists to create, modify, and execute experiments utilizing biometric data from Garmin smartwatches and voice recognition technology.",
+      "Designed and implemented a web application with Flask and SQL, empowering scientists to efficiently monitor and evaluate patient biometric data.",
     ],
   };
 

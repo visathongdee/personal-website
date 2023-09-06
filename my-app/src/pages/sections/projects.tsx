@@ -1,14 +1,11 @@
 import React from "react";
 import "../../style.css";
-import { theme, Card } from "antd";
+import { Card } from "antd";
 import { BsFillCircleFill } from "react-icons/bs";
-// import wanderPhoto from "../images/wanderMap.png";
-// import websitePhoto from "../images/websiteMock.png";
-
-const { useToken } = theme;
+import wanderPhoto from "../images/wanderMap.png";
+import websitePhoto from "../images/websiteMock.png";
 
 export default function Projects() {
-  const { token } = useToken();
   const title = (
     <div style={{ display: "flex", marginTop: "5px", marginBottom: "5px" }}>
       <div
@@ -55,7 +52,11 @@ export default function Projects() {
           </div>
         </div>
         <div>
-          <img src="../images/websiteMock.png" className="proj-photo" />
+          <img
+            src={websitePhoto}
+            alt="visathongdee.com"
+            className="proj-photo"
+          />
         </div>
       </div>
     );
@@ -65,7 +66,7 @@ export default function Projects() {
     return (
       <div style={{ display: "flex", margin: "30px", gap: "40px" }}>
         <div>
-          <img src="../images/wanderMap.png" className="proj-photo" />
+          <img src={wanderPhoto} alt="Wander" className="proj-photo" />
         </div>
         <div>
           <p className="proj-title">Wander</p>

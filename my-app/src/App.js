@@ -1,15 +1,15 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { ConfigProvider, theme } from "antd";
+import { ConfigProvider} from "antd";
 import Home from "./pages/home";
 import "./style.css";
 
 function App() {
-  const theme = {
-    token: {
-      colorPrimary: "#1890ff",
-    },
-  };
+  // const theme = {
+  //   token: {
+  //     colorPrimary: "#1890ff",
+  //   },
+  // };
   return (
     <div className="App">
       <ConfigProvider
