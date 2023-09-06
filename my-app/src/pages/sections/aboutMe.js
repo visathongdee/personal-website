@@ -1,13 +1,14 @@
 import React from "react";
 import "../../style.css";
-import { theme, Card } from "antd";
+import { Card } from "antd";
 import { BsFillCircleFill, BsChevronRight } from "react-icons/bs";
+// import { theme } from "antd";
 // import { useNavigate } from "react-router-dom";
 
-const { useToken } = theme;
+// const { useToken } = theme;
 
 export default function AboutMe() {
-  const { token } = useToken();
+  // const { token } = useToken();
   const title = (
     <div style={{ display: "flex", marginTop: "5px", marginBottom: "5px" }}>
       <div
@@ -32,7 +33,7 @@ export default function AboutMe() {
     </div>
   );
 
-  const techs = ["JavaScript", "Firebase", "Java", "ReactJS", "SQL", "C/C++"];
+  const techs = ["TypeScript/JavaScript", "Firebase", "Java", "ReactJS", "SQL", "C/C++"];
   const techDiv = [];
   for (let tech of techs) {
     techDiv.push(
@@ -46,13 +47,12 @@ export default function AboutMe() {
   return (
     <div className="parent">
       <div className="container">
-        <Card title={title} style={{ textAlign: "left" }}>
+        <Card title={title} className="browserCard">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-            vestibulum, lectus in tincidunt consequat, tortor dolor faucibus
-            urna, at posuere odio lorem at justo. Quisque elementum ex at odio
-            rutrum, et euismod lorem ornare. Ut suscipit lectus quis orci
-            volutpat ornare. Nunc augue dui, cursus nec iaculis ut, commodo sed.
+            I'm Visa Thongdee, a senior at Purdue University studying Computer Science with a concentration in Software Engineering and Machine Learning and an interest on Full Stack Web Development.
+          </p>
+          <p>
+            In my academic journey, I've explored the dynamic world of computer science, from coding complex algorithms to crafting seamless user experiences. I've honed my skills with hands-on projects, covering everything from front-end design to back-end functionality.
           </p>
           <p>A few technologies I've been working with recently:</p>
           <div className="skillsGrid">

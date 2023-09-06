@@ -1,14 +1,14 @@
 import React from "react";
 import "../../style.css";
-import { theme, Card } from "antd";
+import { Card } from "antd";
 import {
   BsFillCircleFill,
   BsChevronRight,
   BsFillFolderFill,
 } from "react-icons/bs";
-import { Radio, Tabs } from "antd";
+import { Tabs } from "antd";
 
-const { useToken } = theme;
+// const { useToken } = theme;
 
 interface ExperienceEntry {
   title: string;
@@ -18,7 +18,7 @@ interface ExperienceEntry {
 }
 
 export default function Experience() {
-  const { token } = useToken();
+  // const { token } = useToken();
   const aboutMeTitle = (
     <div style={{ display: "flex", marginTop: "5px", marginBottom: "5px" }}>
       <div
@@ -48,8 +48,9 @@ export default function Experience() {
     place: "@ Genesys",
     date: "May 2023 - Aug 2023",
     bullets: [
-      "Establish grading guidelines and grade projects of over 800 students of the STAT 19000 course.",
-      "Aid students with questions and issues regarding weekly projects involving Python and R done on Jupyter Notebook.",
+      "Developed and implemented user-friendly UI enhancements using Typescript, improving website usability.",
+      "Streamlined the efficiency of an AWS function, resulting in improved system performance.",
+      "Designed and implemented a comprehensive developer dashboard by integrating various APIs, providing a centralized view of critical developer data.",
     ],
   };
 
@@ -175,7 +176,7 @@ export default function Experience() {
       <div className="container">
         <Card
           title={aboutMeTitle}
-          style={{ textAlign: "left" }}
+          className="browserCard"
           bodyStyle={{ padding: "0", margin: "0" }}
         >
           {/* <Tabs

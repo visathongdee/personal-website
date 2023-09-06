@@ -2,7 +2,7 @@ import React from "react";
 import "../../style.css";
 import { theme, Card } from "antd";
 import { BsFillCircleFill, BsGithub, BsLink, BsLinkedin } from "react-icons/bs";
-import { Github, Linkedin } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 const { useToken } = theme;
 
@@ -35,7 +35,7 @@ export default function Contact() {
   return (
     <div className="parent">
       <div className="container">
-        <Card title={title} style={{ textAlign: "left" }}>
+        <Card title={title} className="browserCard">
           <div
             style={{ display: "flex", flexDirection: "column", gap: "20px" }}
           >
@@ -59,6 +59,9 @@ export default function Contact() {
                 <div
                   style={{ display: "flex", flexDirection: "row", gap: "15px" }}
                 >
+                  <a href="mailto:visathongdee@gmail.com">
+                    <Mail className="contact-icon" />
+                  </a>
                   <a href="https://github.com/visathongdee">
                     <Github className="contact-icon" />
                   </a>

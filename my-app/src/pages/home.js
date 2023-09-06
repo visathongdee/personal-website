@@ -1,6 +1,6 @@
 import React from "react";
 import "../style.css";
-import { Button, theme, Anchor } from "antd";
+import { FloatButton, theme, Anchor } from "antd";
 // import { useNavigate } from "react-router-dom";
 import Landing from "./sections/landing";
 import AboutMe from "./sections/aboutMe";
@@ -38,6 +38,7 @@ export default function Home() {
 
   return (
     <div>
+      <FloatButton.BackTop className="floatbutton"/>
       <Anchor direction="horizontal" items={items} className="anchor" />
       <Landing />
       <div id="aboutMe">

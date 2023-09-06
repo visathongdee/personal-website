@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
-
-
-html {
-    background-color: #F6F6F6
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+*/ html {
+  background-color: #f6f6f6;
 }
 
 /* @font-face {
@@ -11,171 +9,174 @@ html {
 } */
 
 * {
-    font-family: 'Poppins', sans-serif;
-    color: #343B58;
+  font-family: "Poppins", sans-serif;
+  color: #343b58;
 }
 
 p body h1 h2 {
-    font-family: 'Poppins', sans-serif;
-    color: #343B58;
+  font-family: "Poppins", sans-serif;
+  color: #343b58;
 }
 
 h1 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    color: #343B58;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #343b58;
 }
 
-body, h2 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    color: #343B58;
+body,
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #343b58;
 }
 
 p {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    color: #8589A7;
-    margin-top: 0px;
-    margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #8589a7;
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
 
 .landing-parent {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* border: 1px solid #2d2d2d; */
-    height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid #2d2d2d; */
+  height: 70vh;
 }
 
 .parent {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* border: 1px solid #2d2d2d; */
-    height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid #2d2d2d; */
+  height: 100vh;
 }
 .container {
-    flex-direction: column;
-    padding: 0;
+  flex-direction: column;
+  padding: 0;
 }
 
 .ant-card {
-    width: 90vh;
-    border-width: 3px;
-    border-color: #343B58;
-    box-shadow: 7px 7px #343B58;
-    border-radius: 45px;
+  width: 90vh;
+  border-width: 3px;
+  border-color: #343b58;
+  box-shadow: 7px 7px #343b58;
+  border-radius: 45px;
 }
 
 .ant-card .ant-card-head-title {
-    font-size: 35px;
-    font-weight: 500;
-    margin: 12px;
+  font-size: 35px;
+  font-weight: 500;
+  margin: 12px;
 }
 
 .ant-card .ant-card-head {
-    background: #FAADBB;
-    border-width: 3px;
-    border-color: #343B58;
-    border-radius: 43px 43px 0px 0px;
+  background: #faadbb;
+  border-width: 3px;
+  border-color: #343b58;
+  border-radius: 43px 43px 0px 0px;
 }
 
-.ant-card .ant-card-body{
-    font-size: 18px;
-    margin: 2%;
+.ant-card .ant-card-body {
+  font-size: 18px;
+  margin: 2%;
 }
 
-.skillsGrid{
-    display: grid;
-    gap: 10px;
-    grid-template-columns: auto auto auto;
-    padding: 10px;
+.skillsGrid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
 }
 
 .gridItem {
-    padding: 6px;
-    text-align: left;
-    color: #8589A7;
-  }
+  padding: 6px;
+  text-align: left;
+  color: #8589a7;
+}
 
 .bullet {
-    width: 15px;
-    stroke: #F7768E;
-    stroke-width: 1; 
-    margin-right: 10px;
+  width: 15px;
+  stroke: #f7768e;
+  stroke-width: 1;
+  margin-right: 10px;
 }
 
 .circleIcon {
-    padding: 1px;
-    width: 30px;
-    stroke: #343B58;
-    stroke-width: 1.2;
-    fill: #F6F6F6;
-    margin: 0;
-  }
+  padding: 1px;
+  width: 30px;
+  stroke: #343b58;
+  stroke-width: 1.2;
+  fill: #f6f6f6;
+  margin: 0;
+}
 
+.browserCard {
+  text-align: left;
+}
 
 /* ===================== ANCHOR ===================== */
 
-.anchor {
-    /* background-color: rgb(246, 246, 246, 0.5); */
-    /* height: 50px; */
-}
+/* .anchor { */
+/* background-color: rgb(246, 246, 246, 0.5); */
+/* height: 50px; */
+/* } */
 
 .ant-anchor-link-title {
-    font-size: 16px;
-    color: #343B58 !important;
-    padding-inline: 30px;
+  font-size: 16px;
+  color: #343b58 !important;
+  padding-inline: 30px;
 }
 
 .ant-anchor-link-title.ant-anchor-link-title-active {
-    font-size: 16px;
-    color: #F7768E !important;
-    padding-inline: 30px;
+  font-size: 16px;
+  color: #f7768e !important;
+  padding-inline: 30px;
 }
 
 .ant-anchor {
-    padding: 15px !important;
-    padding-top: 60px !important;
-    background-color: rgb(255, 255, 255, 0.75);
-    justify-content: flex-end;
+  padding: 15px !important;
+  padding-top: 30px !important;
+  background-color: rgb(255, 255, 255, 0.75);
+  justify-content: flex-end;
 }
 
 .ant-anchor-ink-bar {
-    color: transparent !important;
+  color: transparent !important;
 }
-
 
 /* ================EXPERIENCE PAGE==================================== */
 .ant-tabs-nav-list {
-    background-color: #8589A7;
-    border-radius: 0px 0px 0px 43px;
-    color: white;
-    border-right: 3px solid #000000;
-    /* max-width: 300px; */
-    /* white-space: normal;
+  background-color: #8589a7;
+  border-radius: 0px 0px 0px 43px;
+  color: white;
+  border-right: 3px solid #000000;
+  /* max-width: 300px; */
+  /* white-space: normal;
     overflow: hidden;
     text-overflow: ellipsis; */
 }
 
 /* background color of active tabs */
 .ant-tabs-tab.ant-tabs-tab-active {
-    background-color: #636681;
-    color: white;
+  background-color: #636681;
+  color: white;
 }
 
- /* "Remove" colored ink bar on the side for active tabs */
+/* "Remove" colored ink bar on the side for active tabs */
 .ant-tabs-ink-bar {
-    background: transparent !important;
+  background: transparent !important;
 }
 
 /* text color of active tabs */
 .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
-    color: white !important; 
-  }
+  color: white !important;
+}
 
 /* Texts of a specific side tabs */
 /* #rc-tabs-1-tab-4.ant-tabs-tab-btn {
@@ -185,10 +186,10 @@ p {
 
 /* Texts of side tabs */
 .ant-tabs-tab-btn {
-    color: white;
-    padding: 10px;
-    font-weight: 500;
-    font-size: large;
+  color: white;
+  padding: 10px;
+  font-weight: 500;
+  font-size: large;
 }
 
 /* Border clipping for the last tab */
@@ -196,129 +197,127 @@ p {
     border-radius: 0px 0px 0px 43px;
 } */
 
-
 /* aligning and coloring folder icons*/
 .tab-label {
-    display: flex;
-    align-items: center;
-  }
-  
+  display: flex;
+  align-items: center;
+}
+
 .tab-label .folderIcon {
-    width: 25px;
-    height: 25px;
-    /* size: 50; */
-    fill: #F6F6F6;
-    padding-right: 15px;
-    /* margin-top: 50px; */
+  width: 25px;
+  height: 25px;
+  /* size: 50; */
+  fill: #f6f6f6;
+  padding-right: 15px;
+  /* margin-top: 50px; */
 }
 
 .ant-tabs-nav .ant-tabs-tab-active {
-    /* Custom border color for active tab */
-    border-color: #636681;
+  /* Custom border color for active tab */
+  border-color: #636681;
 }
 
 .exp-title {
-    color: #343B58;
-    font-size: 20px;
-    font-weight: 500;
-    margin: 0px;
-    width: fit-content;
+  color: #343b58;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0px;
+  width: fit-content;
 }
 
 .exp-title-pink {
-    color: hsl(349, 100%, 74%);
-    font-size: 20px;
-    font-weight: 500;
-    margin: 0px;
-    width: fit-content;
+  color: hsl(349, 100%, 74%);
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0px;
+  width: fit-content;
 }
 
 .exp-title-secondary {
-    color: #8589A7;
-    font-size: 15px;
-    font-weight: 400;
-    margin: 0px;
+  color: #8589a7;
+  font-size: 15px;
+  font-weight: 400;
+  margin: 0px;
 }
 
 .ant-tabs-tab {
-    margin: 0px !important;
-    padding: 10px 24px !important;
+  margin: 0px !important;
+  padding: 10px 24px !important;
 }
 
 .exp-bullet-text {
-    padding: 6px;
-    text-align: left;
-    font-size: 17px;
-    color: #8589A7;
-    display: flex;
+  padding: 6px;
+  text-align: left;
+  font-size: 17px;
+  color: #8589a7;
+  display: flex;
 }
 
 .exp-bullet {
-    width: 25px;
-    stroke: #F7768E;
-    stroke-width: 1; 
-    padding: 10px;
+  width: 25px;
+  stroke: #f7768e;
+  stroke-width: 1;
+  padding: 10px;
 }
-
 
 /* ===================== Projects Page ===================== */
 .proj-title {
-    color: #343B58;
-    font-size: 24px;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+  color: #343b58;
+  font-size: 24px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .proj-photo {
-    width: 400px;
-    border-radius: 10px;
-    border: 2px solid #343B58;
-    background: lightgray 50% / cover no-repeat;
-    box-shadow: 4px 4px 0px 0px #343B58;
+  width: 400px;
+  border-radius: 10px;
+  border: 2px solid #343b58;
+  background: lightgray 50% / cover no-repeat;
+  box-shadow: 4px 4px 0px 0px #343b58;
 }
 
 .proj-content {
-    color: #8589A7;
-    font-size: 18px;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal; 
+  color: #8589a7;
+  font-size: 18px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .proj-tech-list {
-    color: #F7768E;
-    font-size: 16px;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin: 0px;
+  color: #f7768e;
+  font-size: 16px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0px;
 }
 
 .line {
-    background-color: #343B58;
-    color: #343B58;
-    border-color: #343B58;
-    height: 1px;
-    border-radius: 2px;
-    margin-block: 50px;
+  background-color: #343b58;
+  color: #343b58;
+  border-color: #343b58;
+  height: 1px;
+  border-radius: 2px;
+  margin-block: 50px;
 }
 
 /* ===================== Contact Page ===================== */
 .contact-bold {
-    color: #343B58;
-    font-size: 18px;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-bottom: 5px;
+  color: #343b58;
+  font-size: 18px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 5px;
 }
 
 .contact-icon {
-    stroke: #8589A7;
-    width: 20px;
+  stroke: #8589a7;
+  width: 20px;
 }

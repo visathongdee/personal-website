@@ -14,9 +14,6 @@ export default function Landing() {
           Hello, my name is
         </h2>
         <h1 style={{ fontSize: "60px", margin: "0px", textAlign: "left" }}>
-          test check alsdjaklasjdflkjsadflsjkdflkajsdflaksjflkajsfdlaskdjf
-        </h1>
-        <h1 style={{ fontSize: "60px", margin: "0px", textAlign: "left" }}>
           Visa Theerapatra Thongdee
         </h1>
         <h2
@@ -26,7 +23,7 @@ export default function Landing() {
             textAlign: "left",
           }}
         >
-          I am a junior at Purdue University majoring in Computer Science
+          I am a senior at Purdue University majoring in Computer Science
         </h2>
       </div>
     </div>

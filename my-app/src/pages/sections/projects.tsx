@@ -1,7 +1,7 @@
 import React from "react";
 import "../../style.css";
 import { theme, Card } from "antd";
-import { BsFillCircleFill, BsChevronRight } from "react-icons/bs";
+import { BsFillCircleFill } from "react-icons/bs";
 import wanderPhoto from "../images/wanderMap.png";
 import websitePhoto from "../images/websiteMock.png";
 
@@ -39,9 +39,7 @@ export default function Projects() {
         <div>
           <p className="proj-title">visathongdee.com</p>
           <p className="proj-content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-            vestibulum, lectus in tincidunt consequat, tortor dolor faucibus
-            urna, at posuere odio lorem at justo.
+            My personal website to showcase my skill, experiences, and projects.
           </p>
           <div
             style={{
@@ -53,6 +51,7 @@ export default function Projects() {
           >
             <p className="proj-tech-list">ReactJS</p>
             <p className="proj-tech-list">Ant Design</p>
+            <p className="proj-tech-list">Typescript</p>
           </div>
         </div>
         <div>
@@ -71,9 +70,9 @@ export default function Projects() {
         <div>
           <p className="proj-title">Wander</p>
           <p className="proj-content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-            vestibulum, lectus in tincidunt consequat, tortor dolor faucibus
-            urna, at posuere odio lorem at justo.
+            A web app that generates a personalized music playlist for a user's
+            road or plane trip from travel destination and music preferences
+            determined through a preference quiz and the user's Spotify data.
           </p>
           <div>
             <div
@@ -110,10 +109,10 @@ export default function Projects() {
   return (
     <div className="parent">
       <div className="container">
-        <Card title={title} style={{ textAlign: "left" }}>
-          <div>{getWebsiteSection()}</div>
-          <hr className="line" />
+        <Card title={title} className="browserCard">
           <div>{getWanderSection()}</div>
+          <hr className="line" />
+          <div>{getWebsiteSection()}</div>
         </Card>
       </div>
     </div>
