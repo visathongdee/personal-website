@@ -192,11 +192,6 @@ p {
   font-size: large;
 }
 
-/* Border clipping for the last tab */
-/* .ant-tabs-tab:nth-child(4).ant-tabs-tab-active {
-    border-radius: 0px 0px 0px 43px;
-} */
-
 /* aligning and coloring folder icons*/
 .tab-label {
   display: flex;
