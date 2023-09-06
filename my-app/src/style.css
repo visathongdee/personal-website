@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-* html {
+body,
+html {
   background-color: #f6f6f6;
 }
 
@@ -41,6 +42,7 @@ p {
   justify-content: center;
   align-items: center;
   height: 70vh;
+  width: 100vw;
 }
 
 .parent {
@@ -52,9 +54,17 @@ p {
 }
 
 .container {
+  display: flex;
   flex-direction: column;
   padding: 0;
+  margin-left: 50px;
 }
+
+/* @media (max-width: 90vh) {
+  .ant-card {
+    margin: 0 20px;
+  }
+} */
 
 .ant-card {
   width: 90vh;
@@ -113,6 +123,18 @@ p {
 
 .browserCard {
   text-align: left;
+  margin: "0px 20px";
+}
+
+/* ===================== SIDELINES ===================== */
+@media (max-width: 750px) {
+  .topSideline {
+    display: none !important;
+  }
+
+  .bottomSideline {
+    display: none !important;
+  }
 }
 
 .leftSidelineLine {
@@ -138,7 +160,6 @@ p {
   justify-content: flex-start;
   transform: rotate(270deg);
   position: fixed;
-  /* bottom: 20vh; */
   left: -200px;
 }
 
@@ -148,7 +169,6 @@ p {
   gap: 20px;
   transform: rotate(90deg);
   position: fixed;
-  /* bottom: 0; */
   right: -150px;
 }
 
@@ -165,6 +185,7 @@ p {
     display: none !important;
   }
 }
+
 .ant-anchor-link-title {
   font-size: 16px;
   color: #343b58 !important;

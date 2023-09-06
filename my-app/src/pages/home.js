@@ -11,11 +11,6 @@ import { Github, Linkedin, Mail } from "lucide-react";
 export default function Home() {
 
   const items = [
-    // {
-    //   key: "#",
-    //   href: "#",
-    //   title: "l",
-    // },
     {
       key: "aboutMe",
       href: "#aboutMe",
