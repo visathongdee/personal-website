@@ -50,6 +50,17 @@ export default function Projects() {
             <p className="proj-tech-list">Ant Design</p>
             <p className="proj-tech-list">Typescript</p>
           </div>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              gap: "15px",
+              color: "pink",
+            }}
+          >
+            <p className="proj-tech-list">Vercel</p>
+            <p className="proj-tech-list">Figma</p>
+          </div>
         </div>
         <div>
           <img

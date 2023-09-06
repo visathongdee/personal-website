@@ -3,8 +3,14 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ConfigProvider} from "antd";
 import Home from "./pages/home";
 import "./style.css";
+import { useEffect } from "react";
 
 function App() {
+
+  useEffect(() => {
+    document.title = 'Visa Thongdee';
+  }, []);
+
   // const theme = {
   //   token: {
   //     colorPrimary: "#1890ff",
