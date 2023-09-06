@@ -115,8 +115,56 @@ p {
   text-align: left;
 }
 
+.leftSidelineLine {
+  background-color: #f7768e;
+  border: 0;
+  height: 2px;
+  border-radius: 1px;
+  margin: 10px 10px 10px 0px;
+  width: 300px;
+}
+
+.rightSidelineLine {
+  background-color: #f7768e;
+  border: 0;
+  height: 2px;
+  border-radius: 1px;
+  margin: 10px 0px 10px 0px;
+  width: 300px;
+}
+
+.bottomSideline {
+  display: flex;
+  justify-content: flex-start;
+  transform: rotate(270deg);
+  position: fixed;
+  /* bottom: 20vh; */
+  left: -200px;
+}
+
+.topSideline {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  transform: rotate(90deg);
+  position: fixed;
+  /* bottom: 0; */
+  right: -150px;
+}
+
+.sideline-icon {
+  stroke: #8589a7;
+  width: 20px;
+  transform: rotate(270deg);
+}
+
 /* ===================== ANCHOR ===================== */
 
+@media (max-width: 750px) {
+  .ant-anchor {
+    display: none !important;
+  }
+}
 .ant-anchor-link-title {
   font-size: 16px;
   color: #343b58 !important;
@@ -130,10 +178,13 @@ p {
 }
 
 .ant-anchor {
-  padding: 15px !important;
-  padding-top: 30px !important;
+  display: none;
+  padding: 30px 100px 15px 15px !important;
+  /* padding-top: 30px !important;
+  padding-right: 200px !important; */
   background-color: rgb(255, 255, 255, 0.75);
   justify-content: flex-end;
+  backdrop-filter: blur(5px);
 }
 
 .ant-anchor-ink-bar {
