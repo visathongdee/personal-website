@@ -126,6 +126,21 @@ p {
   margin: "0px 20px";
 }
 
+/* ===================== Landing Page ===================== */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /* ===================== SIDELINES ===================== */
 @media (max-width: 750px) {
   .topSideline {
@@ -160,7 +175,7 @@ p {
   justify-content: flex-start;
   transform: rotate(270deg);
   position: fixed;
-  left: -200px;
+  left: -150px;
 }
 
 .topSideline {

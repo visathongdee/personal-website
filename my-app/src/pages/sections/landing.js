@@ -1,12 +1,12 @@
 import React from "react";
 import "../../style.css";
 import { theme } from "antd";
-// import { useNavigate } from "react-router-dom";
 
 const { useToken } = theme;
 
 export default function Landing() {
   const { token } = useToken();
+
   return (
     <div className="landing-parent">
       <div className="container">

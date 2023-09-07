@@ -28,7 +28,14 @@ export default function AboutMe() {
     </div>
   );
 
-  const techs = ["TypeScript/JavaScript", "Firebase", "Java", "ReactJS", "SQL", "C/C++"];
+  const techs = [
+    "TypeScript/JavaScript",
+    "Firebase",
+    "Java",
+    "ReactJS",
+    "SQL",
+    "C/C++",
+  ];
   const techDiv = [];
   for (let tech of techs) {
     techDiv.push(
@@ -44,15 +51,18 @@ export default function AboutMe() {
       <div className="container">
         <Card title={title} className="browserCard">
           <p>
-            I'm Visa Thongdee, a senior at Purdue University studying Computer Science with a concentration in Software Engineering and Machine Learning and an interest on Full Stack Web Development.
+            I'm Visa Thongdee, a senior at Purdue University studying Computer
+            Science with a concentration in Software Engineering and Machine
+            Learning and an interest on Full Stack Web Development.
           </p>
           <p>
-            In my academic journey, I've explored the dynamic world of computer science, from coding complex algorithms to crafting seamless user experiences. I've honed my skills with hands-on projects, covering everything from front-end design to back-end functionality.
+            In my academic journey, I've explored the dynamic world of computer
+            science, from coding complex algorithms to crafting seamless user
+            experiences. I've honed my skills with hands-on projects, covering
+            everything from front-end design to back-end functionality.
           </p>
           <p>A few technologies I've been working with recently:</p>
-          <div className="skillsGrid">
-            {techDiv}
-          </div>
+          <div className="skillsGrid">{techDiv}</div>
         </Card>
       </div>
     </div>

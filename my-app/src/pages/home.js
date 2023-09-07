@@ -9,7 +9,6 @@ import Contact from "./sections/contact.tsx";
 import { Github, Linkedin, Mail } from "lucide-react";
 
 export default function Home() {
-
   const items = [
     {
       key: "aboutMe",
@@ -35,8 +34,8 @@ export default function Home() {
 
   return (
     <div>
-      <FloatButton.BackTop className="floatButton" style={{color: "red"}}/>
-        <Anchor direction="horizontal" affix="true" items={items} />
+      <FloatButton.BackTop className="floatButton" style={{ color: "red" }} />
+      <Anchor direction="horizontal" affix="true" items={items} />
       <Affix offsetTop={150}>
         <div className="topSideline">
           <hr className="rightSidelineLine" />
@@ -52,7 +51,7 @@ export default function Home() {
         </div>
       </Affix>
       <div>
-      <Landing />
+        <Landing />
       </div>
       <div id="aboutMe">
         <AboutMe />
@@ -69,9 +68,7 @@ export default function Home() {
       <Affix offsetBottom={200}>
         <div className="bottomSideline">
           <hr className="leftSidelineLine" />
-          <p>
-            visathongdee@gmail.com
-          </p>
+          <p>visathongdee@gmail.com</p>
         </div>
       </Affix>
     </div>
