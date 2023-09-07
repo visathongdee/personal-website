@@ -49,7 +49,11 @@ export default function Contact() {
             >
               <div>
                 <p className="contact-bold">Email</p>
-                <p>visathongdee@gmail.com</p>
+                <a href="mailto:visathongdee@gmail.com">
+                  <p className="emailSideline">
+                    visathongdee [at] gmail [dot] com
+                  </p>
+                </a>
               </div>
               <div>
                 <p className="contact-bold">Social Media</p>

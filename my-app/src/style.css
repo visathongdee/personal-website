@@ -178,6 +178,15 @@ p {
   left: -150px;
 }
 
+.emailSideline {
+  transition: stroke 0.3s ease, transform 0.3s ease;
+}
+
+.emailSideline:hover {
+  color: #f7768e;
+  transform: translateY(-2px);
+}
+
 .topSideline {
   display: flex;
   justify-content: flex-start;
@@ -191,6 +200,12 @@ p {
   stroke: #8589a7;
   width: 20px;
   transform: rotate(270deg);
+  transition: stroke 0.3s ease, transform 0.3s ease;
+}
+
+.sideline-icon:hover {
+  stroke: #f7768e;
+  transform: rotate(270deg) translateY(-2px);
 }
 
 /* ===================== ANCHOR ===================== */
@@ -237,20 +252,17 @@ p {
 }
 
 /* background color of active tabs */
-
 .ant-tabs-tab.ant-tabs-tab-active {
   background-color: #636681;
   color: white;
 }
 
 /* "Remove" colored ink bar on the side for active tabs */
-
 .ant-tabs-ink-bar {
   background: transparent !important;
 }
 
 /* text color of active tabs */
-
 .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
   color: white !important;
 }
@@ -299,6 +311,12 @@ p {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  transition: stroke 0.3s ease, transform 0.3s ease;
+}
+
+.exp-title-pink:hover {
+  color: #c5465e;
+  transform: translateY(-2px);
 }
 
 .exp-title-secondary {
@@ -390,4 +408,11 @@ p {
 .contact-icon {
   stroke: #8589a7;
   width: 20px;
+  transition: stroke 0.3s ease, transform 0.3s ease;
+}
+
+.contact-icon:hover {
+  stroke: #f7768e;
+  width: 20px;
+  transform: translateY(-2px);
 }

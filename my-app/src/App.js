@@ -1,21 +1,15 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { ConfigProvider} from "antd";
+import { ConfigProvider } from "antd";
 import Home from "./pages/home";
 import "./style.css";
 import { useEffect } from "react";
 
 function App() {
-
   useEffect(() => {
-    document.title = 'Visa Thongdee';
+    document.title = "Visa Thongdee";
   }, []);
 
-  // const theme = {
-  //   token: {
-  //     colorPrimary: "#1890ff",
-  //   },
-  // };
   return (
     <div className="App">
       <ConfigProvider
@@ -34,7 +28,6 @@ function App() {
         <Router>
           <Routes>
             <Route path="/" element={<Home />} />
-            {/* <Route path="/main" element={<Main />} /> */}
           </Routes>
         </Router>
       </ConfigProvider>

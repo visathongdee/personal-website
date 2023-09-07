@@ -1,8 +1,8 @@
 import React from "react";
 import "../style.css";
 import { FloatButton, Anchor, Affix } from "antd";
-import Landing from "./sections/landing";
-import AboutMe from "./sections/aboutMe";
+import Landing from "./sections/landing.tsx";
+import AboutMe from "./sections/aboutMe.tsx";
 import Experience from "./sections/experience.tsx";
 import Projects from "./sections/projects.tsx";
 import Contact from "./sections/contact.tsx";
@@ -68,7 +68,9 @@ export default function Home() {
       <Affix offsetBottom={200}>
         <div className="bottomSideline">
           <hr className="leftSidelineLine" />
-          <p>visathongdee@gmail.com</p>
+          <a href="mailto:visathongdee@gmail.com">
+            <p className="emailSideline">visathongdee [at] gmail [dot] com</p>
+          </a>
         </div>
       </Affix>
     </div>

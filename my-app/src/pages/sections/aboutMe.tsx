@@ -36,10 +36,11 @@ export default function AboutMe() {
     "SQL",
     "C/C++",
   ];
-  const techDiv = [];
+
+  const techDiv: JSX.Element[] = [];
   for (let tech of techs) {
     techDiv.push(
-      <div className="gridItem">
+      <div className="gridItem" key={tech}>
         <BsChevronRight className="bullet" />
         {tech}
       </div>

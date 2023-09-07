@@ -15,6 +15,7 @@ interface ExperienceEntry {
   place: string;
   date: string;
   bullets: string[];
+  link: string;
 }
 
 export default function Experience() {
@@ -52,6 +53,7 @@ export default function Experience() {
       "Streamlined the efficiency of an AWS function, resulting in improved system performance.",
       "Designed and implemented a comprehensive developer dashboard by integrating various APIs, providing a centralized view of critical developer data.",
     ],
+    link: "https://www.genesys.com/",
   };
 
   const dataMineEntry: ExperienceEntry = {
@@ -62,6 +64,7 @@ export default function Experience() {
       "Establish grading guidelines and grade projects of over 800 students of the STAT 19000 course.",
       "Aid students with questions and issues regarding weekly projects involving Python and R done on Jupyter Notebook.",
     ],
+    link: "https://datamine.purdue.edu/",
   };
 
   const itapEntry: ExperienceEntry = {
@@ -74,6 +77,7 @@ export default function Experience() {
       "Maintain constant communication with head office and coworkers through Microsoft Teams.",
       "Advised students and professors with issues regarding technological issues, printing, Purdue's authentication system, student software, etc.",
     ],
+    link: "https://it.purdue.edu/",
   };
 
   const merckEntry: ExperienceEntry = {
@@ -84,6 +88,7 @@ export default function Experience() {
       "Developed a user-friendly website using React and the MERN stack, enabling scientists to create, modify, and execute experiments utilizing biometric data from Garmin smartwatches and voice recognition technology.",
       "Designed and implemented a web application with Flask and SQL, empowering scientists to efficiently monitor and evaluate patient biometric data.",
     ],
+    link: "https://datamine.purdue.edu/corporate/merck/",
   };
 
   const getExperienceEntry = (entry: ExperienceEntry) => {
@@ -99,7 +104,9 @@ export default function Experience() {
         <div>
           <div style={{ display: "flex", gap: "12px", margin: "0px" }}>
             <h2 className="exp-title">{entry.title}</h2>
-            <h2 className="exp-title-pink">{entry.place}</h2>
+            <a href={entry.link} className="experienceLink">
+              <h2 className="exp-title-pink">{entry.place}</h2>
+            </a>
           </div>
           <p className="exp-title-secondary">{entry.date}</p>
         </div>
