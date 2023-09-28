@@ -4,7 +4,8 @@ import "../../style.css";
 export default function Landing() {
   return (
     <div className="landing-parent">
-      <div className="container">
+      <div className="landingContainer">
+        {/* <div className="landingDiv"> */}
         <h2 style={{ color: "#f7768e", margin: "0px", textAlign: "left" }}>
           Hello, my name is
         </h2>
@@ -20,6 +21,7 @@ export default function Landing() {
         >
           I am a senior at Purdue University majoring in Computer Science
         </h2>
+        {/* </div> */}
       </div>
     </div>
   );

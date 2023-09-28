@@ -1,6 +1,6 @@
 import React from "react";
 import "../../style.css";
-import { Card } from "antd";
+import { Card, Form, Layout } from "antd";
 import { BsFillCircleFill, BsChevronRight } from "react-icons/bs";
 
 export default function AboutMe() {
